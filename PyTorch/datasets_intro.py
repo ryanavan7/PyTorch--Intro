@@ -22,6 +22,7 @@ test_data = datasets.FashionMNIST(
 )
 
 #iterating and visualing the dataset
+
 labels_map = {
     0: "T-Shirt",
     1: "Trouser",
@@ -76,8 +77,6 @@ class CustomImageDataset(Dataset):
             label = self.target_transform(label)
         return image, label
     
-
-#display image and label
 # Display image and label.
 train_features, train_labels = next(iter(train_dataloader))
 print(f"Feature batch shape: {train_features.size()}")
