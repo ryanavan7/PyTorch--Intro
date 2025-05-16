@@ -78,8 +78,6 @@ pred_probab = softmax(logits)
 #model parameters
 print(f"Model Structure: {model}\n\n")
 
-print(f"Model structure: {model}\n\n")
-
 #parameterized, having associated weights and biases that are optimized during traing
 #Subclassing nn.Module automatically tracks all fields defined inside your model object
 # and makes all parameters accessible using your model’s parameters() or named_parameters() methods.
